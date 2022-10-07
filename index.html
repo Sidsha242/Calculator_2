@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Website</title>
+     
+    <!--CSS-->
+      <link rel="stylesheet" href="style.css"> 
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<h1>Calculator</h1>
+<div class="calculator">
+<form name="form1">
+<input id = "eq" type ="text" name = "equ">
+
+<section id="buttons">
+<button type="button" onclick="form1.equ.value += '0' ">0</button>
+<button type="button" onclick="form1.equ.value += '1' ">1</button>
+<button type="button" onclick="form1.equ.value += '2' ">2</button>
+<button type="button"  onclick="form1.equ.value += '+' ">+</button><br>
+<button type="button" onclick="form1.equ.value += '3' ">3</button>
+<button type="button" onclick="form1.equ.value += '4' ">4</button>
+<button type="button" onclick="form1.equ.value += '5' ">5</button>
+<button type="button"  onclick="form1.equ.value += '-' " >-</button><br>
+<button type="button" onclick="form1.equ.value += '6' ">6</button>
+<button type="button" onclick="form1.equ.value += '7' ">7</button>
+<button type="button" onclick="form1.equ.value += '8' ">8</button>
+<button type="button"  onclick="form1.equ.value += '*' ">*</button><br>
+<button type="button" onclick="form1.equ.value += '.' ">.</button>
+<button type="button" onclick="form1.equ.value += '9' ">9</button>
+<button type="button" onclick="form1.equ.value = eval(form1.eq.value)">=</button>
+<button type="button"  onclick="form1.equ.value += '/' ">/</button>
+<br>
+<input type = "button" value = "Clear All" onclick = "form1.equ.value = ' ' " id= "clear" > 
+
+
+</section>
+</script>
+</div>
+
+</body>
+</html>
